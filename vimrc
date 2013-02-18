@@ -42,7 +42,7 @@ nmap <D-6> g^
 nmap <D-0> g^
 
 "add some line space for easy reading
-set linespace=4
+set linespace=2
 
 "disable visual bell
 set visualbell t_vb=
@@ -185,9 +185,9 @@ function! s:Median(nums)
 endfunction
 
 "indent settings
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set autoindent
 
@@ -242,7 +242,7 @@ if has("gui_running")
     if has("gui_gnome")
         set term=gnome-256color
         colorscheme molokai
-        set guifont=Monospace\ Bold\ 12
+        set guifont=Monospace\ 10
     endif
 
     if has("gui_mac") || has("gui_macvim")
@@ -433,7 +433,7 @@ let g:user_zen_settings = {
 imap {<CR> {}<ESC>i<CR><ESC>O
 
 " NERDTree settings
-nmap wm :NERDTree<cr>
+" nmap wm :NERDTree<cr>
 let NERDTreeIgnore=['\.swp$']
 
 nnoremap <Esc>A <up>
